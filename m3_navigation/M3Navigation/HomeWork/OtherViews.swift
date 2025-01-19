@@ -1,14 +1,17 @@
 import SwiftUI
 
 struct LoginView: View {
-  let text: String
-  var body: some View {
-    Text(text)
-  }
+
+//    @Binding var tabSelection: Int
+
+    let text: String
+    var body: some View {
+        Text(text)
+    }
 }
 
 struct CatalogView: View {
     var body: some View {
-      Text("Catalog")
+        Text("Catalog")
     }
 }

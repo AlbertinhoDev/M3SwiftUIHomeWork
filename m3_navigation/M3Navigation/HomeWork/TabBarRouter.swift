@@ -8,19 +8,18 @@ enum TabBarRoute {
 
 struct TabBarRouter: Router {
   typealias Route = TabBarRoute
-//  var usingNavigation = true
   
   func viewFor<T>(route: TabBarRoute, content: () -> T) -> AnyView where T : View {
     switch route {
-        case let .loginView:
+    case .loginView:
         return AnyView(TabView {
             content()
         })
-        case .exampleView:
+    case .exampleView:
         return AnyView(TabView{
             content()
         })
-        case .catalogView:
+    case .catalogView:
         return AnyView(TabView{
             content()
         })

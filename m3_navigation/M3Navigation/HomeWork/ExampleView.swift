@@ -2,17 +2,8 @@ import SwiftUI
 
 struct ExampleView: View {
     @State var showingSheet = false
-    
-    init() {
-        //UINavigationBar.appearance().backgroundColor = .gray
-        
-//        UINavigationBar.appearance().largeTitleTextAttributes = [
-//            .foregroundColor: UIColor.darkGray,
-//            .font : UIFont(name:"Papyrus", size: 40)!]
-        
-//        UINavigationBar.appearance().titleTextAttributes = [
-//            .font : UIFont(name: "HelveticaNeue-Thin", size: 20)!]
-    }
+
+    @Binding var tabSelection: Int
     
     var body: some View {
         GeometryReader { geometry in
@@ -31,10 +22,12 @@ struct ExampleView: View {
                     }
                     .padding(8)
                     
-//                    Button("Переход на Login 2") {
-//                        showingSheet = true
-//                    }
-//                    .padding(8)
+                    Button(action: {
+                        tabSelection = 2 // Меняем значение на 2 для перехода ко вкладке Login
+                    }) {
+                        Text("Перейти к Login 2")
+                    }
+                    .padding(8)
                 }
                 .navigationBarItems(
                     trailing:
@@ -68,8 +61,8 @@ struct ExampleLoginView: View {
     }
 }
 
-struct ExampleView_Previews: PreviewProvider {
-    static var previews: some View {
-        ExampleView()
-    }
-}
+//struct ExampleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ExampleView()
+//    }
+//}
