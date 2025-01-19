@@ -3,33 +3,33 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		94277ED828612243004846BD /* M3NavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94277ED728612243004846BD /* M3NavigationApp.swift */; };
-		94277EDA28612243004846BD /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94277ED928612243004846BD /* ExampleView.swift */; };
 		94277EDC28612246004846BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94277EDB28612246004846BD /* Assets.xcassets */; };
 		94277EDF28612246004846BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94277EDE28612246004846BD /* Preview Assets.xcassets */; };
 		94277EE728612622004846BD /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94277EE628612622004846BD /* RouterProtocol.swift */; };
 		94277EEA286126DA004846BD /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94277EE9286126DA004846BD /* MainView.swift */; };
 		94277EEE286127E0004846BD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94277EED286127E0004846BD /* MainRouter.swift */; };
-		94AA1FBA286276EB004B1FED /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA1FB9286276EB004B1FED /* TabBarView.swift */; };
 		94AA1FBC2862DAD7004B1FED /* ExampleWithModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AA1FBB2862DAD7004B1FED /* ExampleWithModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		94277ED428612243004846BD /* M3Navigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M3Navigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94277ED728612243004846BD /* M3NavigationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3NavigationApp.swift; sourceTree = "<group>"; };
-		94277ED928612243004846BD /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		94277EDB28612246004846BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94277EDE28612246004846BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		94277EE628612622004846BD /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
 		94277EE9286126DA004846BD /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		94277EED286127E0004846BD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
-		94AA1FB9286276EB004B1FED /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		94AA1FBB2862DAD7004B1FED /* ExampleWithModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleWithModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FD1D2EEB2D3D3F6C00D9251D /* HomeWork */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = HomeWork; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		94277ED128612243004846BD /* Frameworks */ = {
@@ -61,10 +61,9 @@
 		94277ED628612243004846BD /* M3Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				94277ED928612243004846BD /* ExampleView.swift */,
 				94AA1FBB2862DAD7004B1FED /* ExampleWithModalView.swift */,
 				94277ED728612243004846BD /* M3NavigationApp.swift */,
-				94AA1FB9286276EB004B1FED /* TabBarView.swift */,
+				FD1D2EEB2D3D3F6C00D9251D /* HomeWork */,
 				94277EDB28612246004846BD /* Assets.xcassets */,
 				94277EE82861266F004846BD /* MainView */,
 				94277EE5286125E9004846BD /* Router */,
@@ -112,6 +111,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FD1D2EEB2D3D3F6C00D9251D /* HomeWork */,
 			);
 			name = M3Navigation;
 			productName = M3Navigation;
@@ -171,9 +173,7 @@
 				94277EE728612622004846BD /* RouterProtocol.swift in Sources */,
 				94277EEA286126DA004846BD /* MainView.swift in Sources */,
 				94AA1FBC2862DAD7004B1FED /* ExampleWithModalView.swift in Sources */,
-				94277EDA28612243004846BD /* ExampleView.swift in Sources */,
 				94277ED828612243004846BD /* M3NavigationApp.swift in Sources */,
-				94AA1FBA286276EB004B1FED /* TabBarView.swift in Sources */,
 				94277EEE286127E0004846BD /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,15 +16,9 @@ struct ExampleWithModalView: View {
             }
             .navigationBarTitle(Text("Main"), displayMode: .large)
             
-            .alert(isPresented: $showingSheet) {
-                Alert(
-                    title: Text("Important message"),
-                    message: Text("Wear sunscreen"),
-                    dismissButton: .default(Text("Got it!"))
-                )
-            }
+
             
-            .fullScreenCover(isPresented: $showingSheet) {
+            .fullScreenCover(isPresented: $showingSheet) { 
                 ExampleLoginView(showingSheet: $showingSheet, text: "Login")
             }
         }
